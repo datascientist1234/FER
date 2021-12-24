@@ -6,3 +6,4 @@ tensorflow==2.6.0
 aiortc==1.2.1
 Pillow==8.3.2
 streamlit_webrtc==0.29.1
+opencv-python-headless
