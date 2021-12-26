@@ -14,7 +14,7 @@ emotion_dict = {0:'angry', 1 :'happy', 2: 'neutral', 3:'sad', 4: 'surprise'}
 classifier = load_model('model.h5')
 
 # load weights into new model
-classifier.load_weights("emotion_model1.h5")
+classifier.load_weights("model.h5")
 
 #load face
 try:
