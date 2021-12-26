@@ -1,17 +1,18 @@
-from random import random
 import numpy as np
 import cv2
 import streamlit as st
 from tensorflow import keras
-from keras.models import model_from_json
+from keras.models import model_from_json, load_model
 from keras.preprocessing.image import img_to_array
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, VideoProcessorBase, WebRtcMode
 
 # load model
 emotion_dict = {0:'angry', 1 :'happy', 2: 'neutral', 3:'sad', 4: 'surprise'}
 # load json and create model
-
-classifier = load_model('model.h5')
+json_file = open('emotion_model1.json', 'r')
+loaded_model_json = json_file.read()
+json_file.close()
+classifier = model_from_json(loaded_model_json)
 
 # load weights into new model
 classifier.load_weights("model.h5")
