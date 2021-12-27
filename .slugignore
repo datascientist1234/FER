@@ -13,4 +13,5 @@ There are two notable differences from the Heroku implementation:
 *.py
 /spec
 main.py
+*/.md
 camera.py
