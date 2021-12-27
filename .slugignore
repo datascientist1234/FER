@@ -11,6 +11,8 @@ There are two notable differences from the Heroku implementation:
 *.h5
 /test
 /spec
+main.py
+camera.py
 from __future__ import print_function
 
 import os
