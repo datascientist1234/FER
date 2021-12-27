@@ -1,7 +1,7 @@
 import cv2
 from streamlit_webrtc import VideoTransformerBase, webrtc_streamer
 
-faceCascade = cv2.CascadeClassifier(cv2.haarcascades+'haarcascade_frontalface_default.xml')
+faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 class VideoTransformer(VideoTransformerBase):
